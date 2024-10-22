@@ -10,7 +10,6 @@ interface TypeInfo {
 
 interface Pokemon {
   name: string;
-  url: string;
   id: number;
   types: TypeInfo[];
   sprite: string;
@@ -50,7 +49,7 @@ const GalleryView: React.FC = () => {
         });
         const results = await Promise.all(promises);
         setPokemonList(results);
-        setFilteredPokemon(results);
+        // Removed setting filteredPokemon here
       } catch (error) {
         console.error('Error fetching Pokémon data:', error);
       }
@@ -81,20 +80,7 @@ const GalleryView: React.FC = () => {
           });
           const batchPokemons = await Promise.all(promises);
           setPokemonList((prevList) => [...prevList, ...batchPokemons]);
-
-          if (selectedTypes.length === 0) {
-            setFilteredPokemon((prevList) => [...prevList, ...batchPokemons]);
-          } else {
-            const filteredBatch = batchPokemons.filter((pokemon) => {
-              const pokemonTypeNames = pokemon.types.map(
-                (typeInfo: TypeInfo) => typeInfo.type.name
-              );
-              return selectedTypes.every((selectedType) =>
-                pokemonTypeNames.includes(selectedType)
-              );
-            });
-            setFilteredPokemon((prevList) => [...prevList, ...filteredBatch]);
-          }
+          // Removed filtering logic here
         }
       } catch (error) {
         console.error('Error fetching remaining Pokémon:', error);
@@ -105,7 +91,7 @@ const GalleryView: React.FC = () => {
     fetchInitialPokemon().then(() => {
       fetchRemainingPokemon();
     });
-  }, []);
+  }, []); // Empty dependency array remains
 
   useEffect(() => {
     if (selectedTypes.length === 0) {
