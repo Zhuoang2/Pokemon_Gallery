@@ -49,7 +49,6 @@ const GalleryView: React.FC = () => {
         });
         const results = await Promise.all(promises);
         setPokemonList(results);
-        // Removed setting filteredPokemon here
       } catch (error) {
         console.error('Error fetching Pokémon data:', error);
       }
@@ -80,7 +79,6 @@ const GalleryView: React.FC = () => {
           });
           const batchPokemons = await Promise.all(promises);
           setPokemonList((prevList) => [...prevList, ...batchPokemons]);
-          // Removed filtering logic here
         }
       } catch (error) {
         console.error('Error fetching remaining Pokémon:', error);
@@ -91,7 +89,7 @@ const GalleryView: React.FC = () => {
     fetchInitialPokemon().then(() => {
       fetchRemainingPokemon();
     });
-  }, []); // Empty dependency array remains
+  }, []);
 
   useEffect(() => {
     if (selectedTypes.length === 0) {
