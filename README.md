@@ -1,6 +1,14 @@
-# Pokemon Gallery
+# Pokémon Gallery Website
 
-## Assignment
+Welcome to the **Pokémon Gallery Website**! This web application allows users to browse and explore Pokémon characters in a gallery view with filtering options based on Pokémon types.
+
+## Features
+
+- **Instant Loading**: Displays the first 100 Pokémon immediately upon loading the page.
+- **Background Data Fetching**: Fetches the remaining Pokémon in the background without interrupting user experience.
+- **Type Filtering**: Filter Pokémon by their types using interactive type labels.
+- **Responsive Design**: Optimized for various screen sizes and devices.
+- **Navigation**: Seamless navigation between Gallery View and List View.
 
 #### Task
 In this programming assignment, you will implement a front-end interface using React that consumes an API. Please read through the entire MP before you start.
