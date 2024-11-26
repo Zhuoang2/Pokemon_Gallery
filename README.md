@@ -20,7 +20,7 @@ Welcome to the **Pokémon Gallery Website**! This web application allows users t
 
 ## API Used
 
-### `[Pokemon](https://pokeapi.co/)`
+[Pokemon](https://pokeapi.co/)
 
 ## Available Scripts
 
