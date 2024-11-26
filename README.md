@@ -1,13 +1,4 @@
-# MP 2: New Clear REACTive App
-### Due: October 22st, 2024, 11:59PM CDT
-
-## Table of Contents
-1. [Assignment](#assignment)
-2. [Grading Breakdown](#grading-breakdown)
-3. [Tips](#tips)
-4. [Rules](#rules)
-5. [Getting Started](#getting-started)
-6. [Submission Details](#submission-details)
+# Pokemon Gallery
 
 ## Assignment
 
