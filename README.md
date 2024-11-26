@@ -19,7 +19,7 @@ Welcome to the **Pokémon Gallery Website**! This web application allows users t
 - **CSS**: Cascading Style Sheets for styling components.
 
 ## API Used
-- **[Pokemon](https://pokeapi.co/)
+- **[Pokemon](https://pokeapi.co/)**
 
 
 #### Task
