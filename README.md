@@ -1,6 +1,6 @@
 # Pokémon Gallery Website
 
-Welcome to the **Pokémon Gallery Website**! This web application allows users to browse and explore Pokémon characters in a gallery view with filtering options based on Pokémon types.
+Welcome to the [**Pokémon Gallery Website**](https://zhuoang2.gitlab.io/mp2/)! This web application allows users to browse and explore Pokémon characters in a gallery view with filtering options based on Pokémon types.
 
 ## Features
 
